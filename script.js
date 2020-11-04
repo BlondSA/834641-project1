@@ -58,6 +58,7 @@
 
 4) Потренироваться и переписать цикл еще двумя способами*/
 
+//Вариант 1:
 const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
 const personalMovieDB = {
@@ -99,3 +100,95 @@ if (personalMovieDB.count < 10) {
 }
 
 console.log(personalMovieDB);
+
+// // Вариант 2:
+// const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+
+// const personalMovieDB = {
+//   actors: {},
+//   count: numberOfFilms,
+//   genres: [],
+//   movies: {},
+//   privat: false,
+// };
+
+// let i = 0;
+
+// while (i < 2) {
+//   const questionOne = prompt("Один из последних просмотренных фильмов?", "");
+//   const questionTwo = prompt("На сколько оцените его?", "");
+//   i++;
+
+//   if (
+//     questionOne != null &&
+//     questionTwo != null &&
+//     questionOne != "" &&
+//     questionTwo != "" &&
+//     questionOne.length < 50 &&
+//     questionTwo.length < 50
+//   ) {
+//     personalMovieDB.movies[questionOne] = questionTwo;
+//     console.log("Done");
+//   } else {
+//     console.log("Error");
+//     i--;
+//   }
+// }
+
+// if (personalMovieDB.count < 10) {
+//   alert("Просмотрено довольно мало фильмов");
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
+//   alert("Вы классический зритель");
+// } else if (personalMovieDB.count > 30) {
+//   alert("Вы киноман");
+// } else {
+//   alert("Произошла ошибка");
+// }
+
+// console.log(personalMovieDB);
+
+// // Вариант 3:
+// const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+
+// const personalMovieDB = {
+//   actors: {},
+//   count: numberOfFilms,
+//   genres: [],
+//   movies: {},
+//   privat: false,
+// };
+
+// let i = 0;
+
+// do {
+//   const questionOne = prompt("Один из последних просмотренных фильмов?", "");
+//   const questionTwo = prompt("На сколько оцените его?", "");
+//   i++;
+
+//   if (
+//     questionOne != null &&
+//     questionTwo != null &&
+//     questionOne != "" &&
+//     questionTwo != "" &&
+//     questionOne.length < 50 &&
+//     questionTwo.length < 50
+//   ) {
+//     personalMovieDB.movies[questionOne] = questionTwo;
+//     console.log("Done");
+//   } else {
+//     console.log("Error");
+//     i--;
+//   }
+// } while (i < 2);
+
+// if (personalMovieDB.count < 10) {
+//   alert("Просмотрено довольно мало фильмов");
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
+//   alert("Вы классический зритель");
+// } else if (personalMovieDB.count > 30) {
+//   alert("Вы киноман");
+// } else {
+//   alert("Произошла ошибка");
+// }
+
+// console.log(personalMovieDB);

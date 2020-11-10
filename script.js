@@ -243,8 +243,10 @@ const personalMovieDB = {
     }
   },
   toggleVisibleMyDB: function () {
-    if (personalMovieDB.privat == false) {
-      console.log(personalMovieDB);
+    if (personalMovieDB.privat) {
+      personalMovieDB.privat = false;
+    } else {
+      personalMovieDB.privat = true;
     }
   },
 };
@@ -258,3 +260,7 @@ personalMovieDB.detectPersonalLevel();
 personalMovieDB.writeYourGenres();
 
 personalMovieDB.showMyDB();
+
+personalMovieDB.toggleVisibleMyDB();
+
+console.log(personalMovieDB);
